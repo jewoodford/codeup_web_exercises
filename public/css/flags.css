@@ -1,0 +1,65 @@
+body {
+	background: #6df;
+}
+.flag {
+	width: 200px;
+	height: 100px;
+	margin: 10px 10px 10px 0px;
+}
+
+#flag1 {
+	background-color: blue;
+}
+
+#flag1:after {
+	position: absolute;
+	background-color: yellow;
+	content: '';
+	width: 200px;
+	height: 20px;
+	top: 50px;
+	left: 8px;
+}
+
+#flag1:before {
+	position: absolute;
+	background-color: yellow;
+	content: '';
+	width: 20px;
+	height: 100px;
+	left: 65px;
+}
+
+#flag2 {
+	background-color: #fff;
+}
+
+#flag2:after {
+	position: absolute;
+	background-color: red;
+	content: '';
+	width: 200px;
+	height: 33px;
+}
+
+#flag2:before {
+	position: absolute;
+	background-color: black;
+	content: '';
+	width: 200px;
+	height: 33px;
+	top: 187px;
+}
+
+#triangle {
+	position: absolute;
+	content: '';
+	width: 0px;
+	height: 0px;
+	border: black solid;
+	border-width: 50px;
+	border-color: transparent transparent transparent green;
+	top: 120px;
+}
+
+

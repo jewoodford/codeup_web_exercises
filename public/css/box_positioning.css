@@ -1,0 +1,51 @@
+.box {
+	width: 50px;
+	height: 50px;
+	margin: 25px;
+	padding: 10px;
+	border: 1px solid black;
+	color: white;
+	float: left;
+}
+
+h1 {
+	margin-bottom: 25px;
+	color: purple;
+	text-decoration: bold;
+	text-decoration: underline;
+}
+
+.box img {
+	position: relative;
+	top: -80px;
+	right: -40px;
+
+}
+#container {
+	width: 400px;
+}
+
+.redb {
+	background-color: red;
+}
+
+.orangeb {
+	background-color: orange;
+}
+
+.yellowb {
+	background-color: yellow;
+}
+
+.greenb {
+	background-color: green;
+	/*clear: left;*/
+}
+
+.blueb {
+	background-color: blue;
+}
+
+.purpleb {
+	background-color: purple;
+}
