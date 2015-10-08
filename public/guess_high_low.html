@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+do {
+	var random = Math.floor((Math.random()*100)+1)
+	var turns = 0;
+	do {
+		turns++
+		response = prompt("Guess a number between 1 and 100.");
+
+		if (parseInt(response)) {
+
+			if(response > random) {
+				alert("please guess lower.");
+			} else {
+				if (response < random) {
+					alert("please guess higher.");
+				} 
+			}
+		} else {
+			alert("please make sure it is a number");
+		}
+	} while (response != random, turns != 7);
+	if(turns == 7) {
+		var lost = confirm("YOU LOSE! Would you like to play again?")
+		continue;
+	}
+	if (response == random) {
+		var confirmed = confirm("CONGRATULATIONS! Would you like to play again?");
+	}
+} while (confirmed || lost);
+	</script>
+</body>
+</html>

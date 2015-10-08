@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		// todo:
+		// Create an array of 4 names using literal array notation, in a variable called 'names'.
+		var names = ["Justin", "Ryan", "Crystal", "Jonathan"];
+
+		// todo:
+		// Create a log statement that will log the number of elements in the names array.
+		console.log(names.length);
+
+		// todo:
+		// Create log statements that will print each of the names array elements individually.
+		console.log(names[0]);
+		console.log(names[1]);
+		console.log(names[2]);
+		console.log(names[3]);
+
+		function sayHi(name) {
+			console.log("Hello " + name);
+		}
+		// OR
+
+		for(var i = 0; i < names.length; i += 1) {
+			sayHi(names[i]);
+		}
+		for(var i = 0; i < names.length; i += 1) {
+			console.log("The name at index " + i + " is: " + names[i]);
+		}
+			//elemnt index and array need to be in this order or they will be holding the wrong values!!!!!
+		names.forEach(function (element, index, array) {
+			console.log("The name at index "  + index + " is " + element)
+		});
+
+		function iterateNames(element, index, array) {
+			console.log("The name at index " + index + " is " + element)
+		}
+
+		names.forEach(iterateNames);
+//////////////
+		var greetings = [];
+
+		names.forEach(function (element, index, array) {
+			greetings[index] = "Hi there " + element;
+		});
+
+		greetings.forEach(function (element, index, array) {
+			console.log(element)
+		});
+/////////////
+
+
+		var shapes = ["octogan", "sphere", "square", "rectangle"]
+
+		shapes.forEach(function (shape, index, array) {
+			console.log("The shape at index " + index + " is " + shape)
+		});
+
+		var tacos = ["chorizo", "picadillo", "guacamole", "norteno", "barbacoa", "fajita", "99 cent", "not a real taco from taco bell", "lengua"];
+
+		tacos.forEach(function (taco, index, array) {
+			if (index > 0) {
+				console.log("I just ate a " + array[index - 1]);
+			}
+			console.log("I am eating a " + taco + " taco.");
+
+			if (index < array.length - 1) {
+				console.log("The nex taco in line is " + array[index + 1] + ".");
+			}
+			console.log("yum")
+		});
+
+		console.log(greetings)
+
+///////////EXERCISE
+
+		for(var i = 0; i < names.length; i += 1) {
+			console.log(names[i])
+		}
+		
+		names.forEach(function (element, index, array) {
+			console.log(element)
+		})
+
+	</script>
+</body>
+</html>

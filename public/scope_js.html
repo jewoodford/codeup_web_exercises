@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+	(function() {
+		"use strict";
+
+
+			var myNameIs = 'Justin';
+
+			function sayHello(fname) {
+				return "Hello " + fname;
+			}
+
+			console.log(sayHello(myNameIs));
+
+
+		function randomNumber(min, max) {
+			return Math.floor((Math.random()* (max - min)) + min + 1);
+		}
+		var random = randomNumber(1, 100);
+
+
+		function isOdd(numA) {
+			var remainder = numA % 2;
+
+			// if(remainder !==0) {console.log(random + " is odd.")
+			// } else {
+			// 	console.log(random + " is not odd.")
+			// }
+
+			return (remainder !== 0) ? console.log(numA + " is odd.") : console.log(numA + " is not odd.");
+		}
+
+		isOdd(random);
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		function areaOfRectangle(height, width) {
+			var rArea = height * width;
+			return rArea;
+		}
+
+		function areaOfTriangle(height, width) {
+			var triArea = (height * width) / 2;
+			return triArea;
+		}
+
+		function areaOfCircle(radius) {
+			var cArea = (Math.PI) * (radius * radius);
+			return cArea;
+		}
+
+		function perimeterOfCircle(circumference) {
+			var cPerim = Math.PI * circumference;
+			return cPerim;
+		}
+
+		function areaOfTrapezoid(base1, base2, height) {
+			var trapArea = ((base1 + base2) / 2) * height;
+			return trapArea;
+		}
+
+		function shadedArea(area1, area2) {
+			var shadeArea = area1 - area2;
+			return shadeArea;
+		}
+
+		function areaOfStar(smTSide) {
+			var starStep1 = (smTSide + smTSide + smTSide) / 2;
+			var starArea = (Math.sqrt((starStep1 * (starStep1 - smTSide) * (starStep1 - smTSide) * (starStep1 - smTSide)))) * 12;
+			return starArea;
+		}
+
+
+		console.log(areaOfRectangle(8, 15))
+		console.log(areaOfTriangle(8, 9))
+		console.log(areaOfCircle(5))
+		console.log(perimeterOfCircle(10))
+		console.log(areaOfTrapezoid(2, 4, 3))
+		console.log(shadedArea(areaOfRectangle(8, 9), areaOfTriangle(8, 15)))
+		console.log(areaOfStar(4))
+
+})()
+	</script>
+</body>
+</html>
