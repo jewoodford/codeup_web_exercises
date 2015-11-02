@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+		"use strict";
+
+		var student = {};
+
+		student.firstName = "Will";
+		student.lastName = "Swantner";
+
+		student.sayHello = function(msg) {
+			this.msg = msg;
+			console.log(this.firstName + " " + this.lastName + ' says "' + msg + '"' );
+		};
+////////JSON
+		
+		var person = [{
+			"firstNam": "Ryan",
+			"lastNam": "Bentkowski",
+			sayHi: function(msg) {
+				console.log(this.firstNam + " " + this.lastNam + " says \"" + msg + "\"");
+			},
+			grades: [
+				100, 98, 90, 96, 100, 76
+			]
+		}, {
+			"firstNam": "Crystal",
+			"lastNam": "Wyrick",
+			sayHi: function(msg) {
+				console.log(this.firstNam + " " + this.lastNam + " says \"" + msg + "\"");
+			},
+			grades: [
+				100, 100, 100, 100, 100, 100 
+			]
+		}];
+	</script>
+</body>
+</html>

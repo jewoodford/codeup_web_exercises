@@ -86,6 +86,45 @@
 			console.log(element)
 		})
 
+/////////////////Manipulating Arrays
+
+		weekDays = ["sunday", "monday", "tuesday", "wednsday", "thursday", "friday", "saturday"]
+
+		console.log(weekDays)
+		weekDays.pop();
+		console.log(weekDays);
+		weekDays.push("saturday")
+		console.log(weekDays)
+		weekDays.shift();
+		console.log(weekDays);
+		weekDays.unshift("sunday");
+		console.log(weekDays);
+
+//first number is index, second is the amount of elements removed
+		weekDays.splice(2, 1)
+		console.log(weekDays)
+
+	var inventory = ["javascript the good parts", "pens", "paper", "laptop case"]
+
+	var shoppingCart = []
+
+	shoppingCart.push(inventory) //Pushes all of the inventory into the cart
+
+	var itemToRemove = prompt("What item do you want to remove from the shopping cart?");
+	
+	console.log(shoppingCart)
+
+	shoppingCart.splice(shoppingCart.indexOf(itemToRemove), 1);
+
+
+	function removeElementsFromArray(array, index, numberOfElements) {
+		var arrayAfterRemoval = array.splice(index, numberOfElements)
+		return arrayAfterRemoval;
+	}
+
+	removeElementsFromArray(inventory, 2, 1)
+	console.log(inventory)
+
 	</script>
 </body>
 </html>

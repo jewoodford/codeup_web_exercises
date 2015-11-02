@@ -1,0 +1,51 @@
+body {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -110px;
+	background-image: url(/img/math_background.jpg);
+}
+button {
+	height: 40px;
+	width: 35px;
+}
+
+#calculator {
+	margin-top: 10px;
+}
+
+.calcNumButt {
+	background-color: #f90;
+}
+
+#butt0 {
+	width: 74px;
+}
+
+#calcEqualsButt {
+	background-color: #3b3;
+}
+
+.calcOpButt {
+	background-color: blue;
+}
+
+#calcClearButt {
+	background-color: red; 
+}
+input {
+	height: 20px;
+	width: 105px;
+	border: 3px solid black;
+	overflow-x: scroll;
+}
+
+#textarea1, #textarea3 {
+	background-color: #f90;
+}
+
+#textarea2 {
+	width: 28px;
+	background-color: blue;
+}
+

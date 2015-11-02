@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var books = [{
+			title: "Eragon",
+			author: {
+				firstName: "Christopher",
+				lastName: "Paolini"
+			}
+			
+		}, {
+			title: "Harry Potter and the Goblet of Fire",
+			author: {
+				firstName: "Joanne",
+				lastName: "Rowling"
+			}
+		}, {
+			title: "A World Without Heroes",
+			author: {
+				firstName: "Brandon",
+				lastName: "Mull"
+			}
+		}, {
+			title: "Pathfinder",
+			author: {
+				firstName: "Orson",
+				lastName: "Card"
+			}
+		}, {
+			title: "Hounded",
+			author: {
+				firstName: "Kevin",
+				lastName: "Hearne"
+			}
+		}];
+		books.forEach(function (element, index, array) {
+			console.log("Title: " + books[index].title);
+			console.log("author: " + books[index].author.firstName + books[index].author.lastName);
+			console.log("Book #" + (index + 1));
+			console.log("-------");
+		});
+	</script>
+</body>
+</html>
